@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Car-License-Plate']
+
+roboflow:
+  workspace: carlicenseplatedetection
+  project: carlicenseplate-8rwrv
+  version: 2
+  license: MIT
+  url: https://universe.roboflow.com/carlicenseplatedetection/carlicenseplate-8rwrv/dataset/2
