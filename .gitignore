@@ -137,7 +137,7 @@ dmypy.json
 .pyre/
 
 # datasets and projects
-runs/
+# runs/
 wandb/
 tests/
 .DS_Store
