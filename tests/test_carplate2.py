@@ -5,7 +5,7 @@ cls_model_dir='../models/ch_ppocr_mobile_v2.0_cls_infer'
 rec_model_dir='../models/ch_PP-OCRv4_rec_infer'
 ocr = PaddleOCR(use_angle_cls=True, lang="ch", det=False, rec_model_dir=rec_model_dir)  # need to run only once to download and load model into memory
 img_path = '../images/6.jpg'
-result = ocr.ocr(img_path, cls=True)​
+result = ocr.ocr(img_path, cls=True)
 license_name, conf = result[0][0][1]
 if '·' in license_name:
     license_name = license_name.replace('·', '')
