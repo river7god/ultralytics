@@ -2,10 +2,10 @@ task: detect
 mode: train
 model: yolov8n.pt
 data: /content/ultralytics/datasets/CarLicensePlateV2/data.yaml
-epochs: 65
+epochs: 61
 time: null
 patience: 50
-batch: 4
+batch: 5
 imgsz: 640
 save: true
 save_period: -1

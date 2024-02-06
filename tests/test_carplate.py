@@ -24,8 +24,8 @@ img_path = "/content/ultralytics/images/1.jpg"
 now_img = cv2.imread(img_path)
 
 # ocr model
-#cls_model_dir = 'paddleModels/whl/cls/ch_ppocr_mobile_v2.0_cls_infer'
-#rec_model_dir = 'paddleModels/whl/rec/ch/ch_PP-OCRv4_rec_infer'
+cls_model_dir = 'paddleModels/whl/cls/ch_ppocr_mobile_v2.0_cls_infer'
+rec_model_dir = 'paddleModels/whl/rec/ch/ch_PP-OCRv4_rec_infer'
 # ocr = PaddleOCR(use_angle_cls=False, lang="ch", det=False)
 ocr = PaddleOCR(lang="ch", det=False, rec_model_dir=rec_model_dir)
 
